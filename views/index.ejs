@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="<%=obj.cssPath%>" />
+<script src="https://kit.fontawesome.com/ea1e76dc8a.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<body>
+    <div id="mainRoot">
+        <div class="header"> <div id="logoBox"> <img id="logoImg" src="Assets/logo.png" />Notebook</div> <div id="viewOptionBar"> <div title="NoteBooks" class="viewOption"> <img class="viewImage" src="/Assets/sidebar.png" /> </div> <div title="All Notes" class="viewOption" onclick="showAllTask()" > <img class="viewImage" src="/Assets/list.png" /> </div> </div> <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <% if(obj.image) { %>
+                <img src="<%= obj.image %>" id="profile" />
+            <% }
+            else{  %>    
+                <img src="/Assets/profile.png" id="profile" />
+            <% } %> 
+            <button id="selectImage"><label for="imgInput"><input type="file" onchange="setImage()" id="imgInput" name="imgInput" placeholder="" style="display: none;" value=""/> <i  class="fa-solid fa-sort-down"></i></label> </button></div> </div>
+        <div id="optionBox">Notebooks <button id="addNewBook" onclick="showMessageBox()"> <i class="fa-solid fa-plus" style="font-size: 22px;"></i> Notebook</button> </div>
+        <div id="mainBox">
+            <% for(let i = 0 ; i<obj.NoteBooks.length ; i++) { %>
+                <div data-id=<%= obj.NoteBooks[i].NoteBook_No %> class='noteBook' ondblclick='showTask(this)'> <button id="showTaskOption" onclick="showTaskOption(this)"><i class="fa-solid fa-ellipsis"></i></i></button><div class="taskOptionNone"><button class="taskOptionButton" onclick="deletetask(this)" id="deleteOption">Delete</button></div><h1 id="taskNameMain"> <%= obj.NoteBooks[i].BoardName%></h1></div>
+            <% } %>    
+        </div>
+        <div id="messageBox" >
+            <div id="mainMesage"><input id="boardNameInput" type="text" placeholder="NoteBook Name">
+                <button id="acceptButton" onclick="createNewBook()" >Create</button></div>
+        </div>
+    </div>
+    
+</body>
+<script src="<%= obj.jsPath %>" >
+</script>

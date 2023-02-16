@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="<%=obj.cssPath%>" />
+<script src="https://kit.fontawesome.com/ea1e76dc8a.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<body>
+    <div id="mainRoot">
+        <div class="header"> <div id="logoBox"> <img id="logoImg" src="Assets/logo.png" />Notebook</div> <div id="viewOptionBar"> <div class="viewOption" onclick="showNoteBooks()"> <img class="viewImage" src="/Assets/sidebar.png" /> </div> <div class="viewOption" onclick="showAllTask()" > <img class="viewImage" src="/Assets/list.png" /> </div> </div> 
+        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <% if(obj.image) { %>
+                <img src="<%= obj.image %>" id="profile" />
+            <% }
+            else{  %>    
+                <img src="/Assets/profile.png" id="profile" />
+            <% } %> 
+            </div>
+        </div>  
+        <div id="optionBox">All Notes</div>
+        <div id="mainBox">   
+            <% for(let i = 0 ; i<obj.taskArr.length ; i++) { %>
+                <% for(let j = 0 ; j<obj.taskArr[i].NotesTask.length ; j++) { %>
+                <div data-id='<%= obj.taskArr[i].NotesTask[j].taskName %>' boardNo="<%= i %>" taskCount = '<%= j %>' class='task' ondblclick='changeTask(this)'><h1 id="taskNameMain"><%= obj.taskArr[i].NotesTask[j].taskName %></h1></div>
+                <% } %> 
+            <% } %>  
+        </div>
+        <div id="messageBox">
+            <div id="TaskArea">
+                <div id="taskHeader"><button id="closeButton" onclick="closeBox()" ><i class="fa-solid fa-x"></i></button> <textarea disabled placeholder="Task Name" id="taskname"></textarea></div>
+                <textarea disabled placeholder="Enter Your Task..." id="taskText" ></textarea>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="<%= obj.jsPath %>" >
+</script>

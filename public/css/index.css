@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'zoho_puviblack';
+    src: url('../../Puvi/zoho_puvi_black-webfont.woff2') format('woff2'),
+         url('../../Puvi/zoho_puvi_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'zoho_puvibold';
+    src: url('../../Puvi/zoho_puvi_bold-webfont.woff2') format('woff2'),
+         url('../../Puvi/zoho_puvi_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'zoho_puvibold_italic';
+    src: url('../../Puvi/zoho_puvi_bold_italic-webfont.woff2') format('woff2'),
+         url('../../Puvi/zoho_puvi_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'zoho_puviextrablack';
+    src: url('../../Puvi/zoho_puvi_extrablack-webfont.woff2') format('woff2'),
+         url('../../Puvi/zoho_puvi_extrablack-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'zoho_puviextrabold';
+    src: url('../../Puvi/zoho_puvi_extrabold-webfont.woff2') format('woff2'),
+         url('../../Puvi/zoho_puvi_extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'zoho_puviextralight';
+    src: url('../../Puvi/zoho_puvi_extralight-webfont.woff2') format('woff2'),
+         url('../../Puvi/zoho_puvi_extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'zoho_puvilight';
+    src: url('../../Puvi/zoho_puvi_light-webfont.woff2') format('woff2'),
+         url('../../Puvi/zoho_puvi_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'zoho_puvimedium';
+    src: url('../../Puvi/zoho_puvi_medium-webfont.woff2') format('woff2'),
+         url('../../Puvi/zoho_puvi_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'zoho_puviregular';
+    src: url('../../Puvi/zoho_puvi_regular-webfont.woff2') format('woff2'),
+         url('../../Puvi/zoho_puvi_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'zoho_puviitalic';
+    src: url('../../Puvi/zoho_puvi_regular_italic-webfont.woff2') format('woff2'),
+         url('../../Puvi/zoho_puvi_regular_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'zoho_puvisemibold';
+    src: url('../../Puvi/zoho_puvi_semibold-webfont.woff2') format('woff2'),
+         url('../../Puvi/zoho_puvi_semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'zoho_puvisemibold_italic';
+    src: url('../../Puvi/zoho_puvi_semibold_italic-webfont.woff2') format('woff2'),
+         url('../../Puvi/zoho_puvi_semibold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'zoho_puvisemibold';
+    font-size: 24px;
+    font-weight: 700!important;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#mainRoot{
+    position: relative;
+    height: 100%; 
+    width: 100%;
+    background-color: #F7F7F7;
+}
+.header{
+    width: 100%;
+    height: 6%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#logoBox{
+    height: 60%;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'zoho_puvilight';
+    padding-right: 10px;
+    border-right: 2px solid #DDDDDD;
+}
+#logoImg{
+    margin-left: 50px;
+    height: 80%;
+    width: 15%;
+}
+#viewOptionBar{
+    width: 8%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 2vw;
+}
+.viewOption{
+    height: 85%;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.viewOption:hover{
+    cursor: pointer;
+    background-color: #0000004d;
+}
+.viewImage{
+    width: 2vw;
+    height: 2vw;
+}
+#profile{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+#profile:hover{
+    cursor: pointer;
+}
+#selectImage{
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+}
+#optionBox{
+    width: 100%;
+    height: 6%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'zoho_puviregular';
+}
+#addNewBook{
+    width: 45%;
+    background-color: transparent;
+    border: none;
+    font-family: 'zoho_puviextralight';
+    font-size: 20px;
+    text-align: right;
+    padding-right: 50px;
+}
+#addNewBook:hover{
+    cursor: pointer;
+}
+#mainBox{
+    height: 79%;
+    width: 95%;
+    padding: 50px 50px 50px 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    overflow: scroll;
+}
+
+.noteBook{
+    font-family: 'zoho_puvilight';
+    height: 26%;
+    width: 10%;
+    background: white;
+    border: none;
+    box-shadow: 0px 5px 20px 0px #a1a1a1;
+    margin: 1%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 500ms;
+}
+
+.noteBook:hover{
+    height: 26.5%;
+    width: 10.5%;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px 0px #000000;
+}
+
+#messageBox{
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #0000004d;
+    transform: translateX(-1930px);
+    transition: 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #mainMesage{
+    width: 35%;
+    height: 35%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 20px 30px 15px #2626264d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  input[type="text"]{
+    height: 65px;
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 18px 10px #e1e1e1;
+    font-family: 'zoho_puvilight';
+  }
+  input[type="text"]:focus{
+    outline: none;
+    box-shadow: 0 0 10px #007bff;
+    background-color: #fff;
+  }
+  
+  #acceptButton{
+    height: 70px;
+    width: 150px;
+    border: none;
+    background-color: #000000;
+    border-radius: 50px;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: 'zoho_puvisemibold_italic';
+  }
+  #showTaskOption{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    transform: translate(70px,-90px);
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+  }
+  #showTaskOption:hover{
+    cursor: pointer;
+    background-color: #0000004d;
+  }
+  .taskOptionNone{
+    display: none;
+    /* position: absolute; */
+    height: 60%;
+    width: 60%;
+    background-color: white;
+    transform: translate(70px);
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px 0px #a1a1a1;
+    overflow: hidden;
+  }
+  .taskOptionBlock{
+    display: block;
+    /* position: absolute; */
+    height: 60%;
+    width: 60%;
+    background-color: white;
+    transform: translate(70px);
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px 0px #a1a1a1;
+    overflow: hidden;
+  }
+  #taskNameMain{
+    width: 10%;
+    position: absolute;
+    font-family: 'zoho_puviregular';
+    font-size: 25px;
+    color: white;
+
+  }
+  .taskOptionButton{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-family: 'zoho_puvilight';
+    font-size: 18px;
+    border-bottom: 1px solid #a1a1a1;
+  }
+  .taskOptionButton:hover{
+    cursor: pointer;
+    color: red;
+  }

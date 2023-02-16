@@ -1,0 +1,543 @@
+@font-face {
+  font-family: 'zoho_puviblack';
+  src: url('../../Puvi/zoho_puvi_black-webfont.woff2') format('woff2'),
+       url('../../Puvi/zoho_puvi_black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'zoho_puvibold';
+  src: url('../../Puvi/zoho_puvi_bold-webfont.woff2') format('woff2'),
+       url('../../Puvi/zoho_puvi_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'zoho_puvibold_italic';
+  src: url('../../Puvi/zoho_puvi_bold_italic-webfont.woff2') format('woff2'),
+       url('../../Puvi/zoho_puvi_bold_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'zoho_puviextrablack';
+  src: url('../../Puvi/zoho_puvi_extrablack-webfont.woff2') format('woff2'),
+       url('../../Puvi/zoho_puvi_extrablack-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'zoho_puviextrabold';
+  src: url('../../Puvi/zoho_puvi_extrabold-webfont.woff2') format('woff2'),
+       url('../../Puvi/zoho_puvi_extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'zoho_puviextralight';
+  src: url('../../Puvi/zoho_puvi_extralight-webfont.woff2') format('woff2'),
+       url('../../Puvi/zoho_puvi_extralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'zoho_puvilight';
+  src: url('../../Puvi/zoho_puvi_light-webfont.woff2') format('woff2'),
+       url('../../Puvi/zoho_puvi_light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'zoho_puvimedium';
+  src: url('../../Puvi/zoho_puvi_medium-webfont.woff2') format('woff2'),
+       url('../../Puvi/zoho_puvi_medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'zoho_puviregular';
+  src: url('../../Puvi/zoho_puvi_regular-webfont.woff2') format('woff2'),
+       url('../../Puvi/zoho_puvi_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'zoho_puviitalic';
+  src: url('../../Puvi/zoho_puvi_regular_italic-webfont.woff2') format('woff2'),
+       url('../../Puvi/zoho_puvi_regular_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'zoho_puvisemibold';
+  src: url('../../Puvi/zoho_puvi_semibold-webfont.woff2') format('woff2'),
+       url('../../Puvi/zoho_puvi_semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'zoho_puvisemibold_italic';
+  src: url('../../Puvi/zoho_puvi_semibold_italic-webfont.woff2') format('woff2'),
+       url('../../Puvi/zoho_puvi_semibold_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.form-container {
+  position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'zoho_puviregular';
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  #contain{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('/Assets/v904-nunny-012.jpg');
+  }
+  #messageBox{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0000004d;
+    transform: translateX(-193vh);
+    transition: 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  #mainMessage{
+    width: 35%;
+    height: 40%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1vh;
+    box-shadow: 0px 2vh 3vh 1.5vh #2626264d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #messageText{
+    font-size: 2.5vh;
+  }
+  #acceptButton{
+    height: 6vh;
+    width: 10vh;
+    border: none;
+    background-color: #139bd7;
+    border-radius: 5vh;
+    font-size: 2vh;
+    color: aliceblue;
+    font-weight: 700;
+    font-family: 'zoho_puviregular';
+    padding: 0px ;
+  }
+  #acceptButton:active{
+    transform: scale(0.95);
+  }
+  /* .mainForm{
+    height: 450px;
+    width: 400px;
+    box-shadow: 0 0 20px #ccc;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+  }  
+  .form-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .form-header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .signin-form, .signup-form {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .signin-form input[type="text"], .signin-form input[type="password"], .signup-form input[type="text"], .signup-form input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-family: 'Cabin', sans-serif;
+  } */
+  
+  [type="text"]:focus, [type="password"]:focus{
+    outline: none;
+    box-shadow: 0 0 1vh #0000004d;
+    background-color: #fff;
+  }
+  
+  /* .signin-form button, .signup-form button {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+  }
+  
+  .signin-form button:hover, .signup-form button:hover {
+    background-color: #0069d9;
+  }
+
+  .submitButton {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 40px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.3s;
+    font-family: 'Cabin', sans-serif;
+  }
+  
+  .submitButton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px #ccc;
+  }
+  
+  .submitButton:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 20px #ccc;
+  } */
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'zoho_puviregular';
+	height: 100vh;
+}
+
+h1 {
+  font-size: 3vh;
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-size: 1.4vh;
+	font-weight: 100;
+	line-height: 2vh;
+	letter-spacing: 0.05vh;
+	margin: 2vh 0 3vh;
+}
+
+span {
+	font-size: 1.8vh;
+}
+
+button {
+  font-family: 'zoho_puvilight';
+	border-radius: 2vh;
+	border: 1px solid #6E78F6;
+	background-color: #6E78F6;
+	color: #FFFFFF;
+	font-size: 1.2vh;
+	font-weight: bold;
+	padding: 1.2vh 4.5vh;
+	letter-spacing: 0.01vh;
+	text-transform: uppercase;
+	transition: transform 100ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+#form{
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+  padding: 9vh;
+	justify-content: space-evenly;
+	flex-direction: column;
+	height: 100%;
+  width: 100%;
+	text-align: center;
+}
+
+input {
+  font-family: 'zoho_puvilight';
+	background-color: white;
+	border: 1px solid #DDDDDD;
+	padding: 1.2vh 1.5vh;
+	margin: 0.8vh 0;
+	width: 60%;
+  height: 12%;
+  border-radius: 1vh;
+  font-size: 1.6vh;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 1vh;
+  width: 60%;
+    height: 60%;
+  	box-shadow: 0 1.4vh 2.8vh rgba(0,0,0,0.25), 
+			0 1vh 1vh rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+	min-height: 48vh;
+}
+
+.form-container {
+  background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: #FF416C;
+	background: -webkit-linear-gradient(300deg, #6572F6, #F7CCF9);
+	background: linear-gradient(300deg, #6572F6, #F7CCF9);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 4vh;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+.social-container {
+	margin: 20px 0;
+}
+
+.social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0.5vh;
+	height: 4vh;
+	width: 4vh;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 1.4vh;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 1vh 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}
