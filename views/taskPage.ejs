@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="<%=obj.cssPath%>" />
 <script src="https://kit.fontawesome.com/ea1e76dc8a.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<title>Notes App</title>
+<link rel="icon" type="image/x-icon" href="Assets/logo.png">
 <body>
 
     <div id="mainRoot">
@@ -14,7 +16,7 @@
     </div>
         <div id="optionBox"><button id="goBack" onclick="goToPreviousPage()"><i class="fa-solid fa-arrow-left"></i></button>  <textarea id="boardNameText"></textarea><button onclick="saveBoardName()" id="saveButton"><i class="fa-solid fa-check"></i></button> <button id="addNewTask" onclick="showTaskBox()"> <i class="fa-solid fa-plus" style="font-size: 22px;"></i> Task</button> </div>
         <div id="mainBox">   
-            <% for(let i = 0 ; i<obj.taskArr.length ; i++) { %>
+            <% for(let i = obj.taskArr.length-1 ; i>=0 ; i--) { %>
                 <div data-id='<%= obj.taskArr[i].taskName %>' class='task' ondblclick='changeTask(this)'><button id="showTaskOption" onclick="showTaskOption(this)"><i class="fa-solid fa-ellipsis"></i></i></button><div class="taskOptionNone"><button class="taskOptionButton" onclick="deletetask(this)" id="deleteOption">Delete</button></div><h1 id="taskNameMain"><%= obj.taskArr[i].taskName %></h1></div>
             <% } %>  
         </div>
